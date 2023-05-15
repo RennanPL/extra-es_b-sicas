@@ -1,0 +1,13 @@
+Trip_review_database <- read.table("https://archive.ics.uci.edu/ml/machine-learning-databases/00484/tripadvisor_review.csv", header = FALSE, sep = ',', dec = '.', col.names = c('user_id', 'category1', 'category2', 'category3', 'category4', 'category5', 'category6', 'category7', 'category8', 'category9', 'category10'))
+
+View(Trip_review_database)
+
+Trip_Review_database.csv <- read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/00484/tripadvisor_review.csv", header = FALSE, sep = ',', dec = '.', col.names = c('user_id', 'category1', 'category2', 'category3', 'category4', 'category5', 'category6', 'category7', 'category8', 'category9', 'category10'))
+
+View(Trip_Review_database.csv)
+
+perfil_vacinados_recife_dataset.json <- fromJSON(file= "http://dados.recife.pe.gov.br/dataset/7ccb3816-0d62-49e1-b39a-3159870883b0/resource/224d1cba-d5fa-415b-979e-a15f21ee88b2/download/metadados_perfilvacinados.json")
+
+perfil_vacinados_recife_dataset.json <- as.data.frame(perfil_vacinados_recife_dataset.json)
+
+View(perfil_vacinados_recife_dataset.json)
